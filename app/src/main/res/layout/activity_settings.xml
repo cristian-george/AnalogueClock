@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange_100"
+    tools:context=".activity.SettingsActivity">
+
+    <TextView
+        android:id="@+id/hourTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/hour_color"
+        android:textColor="@color/orange_900"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/pickerTitleOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/current_color"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hourTitle" />
+
+    <View
+        android:id="@+id/preview_selected_color_hour"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="@id/pickerTitleOne"
+        app:layout_constraintStart_toEndOf="@id/pickerTitleOne"
+        app:layout_constraintTop_toTopOf="@id/pickerTitleOne" />
+
+    <Button
+        android:id="@+id/set_color_hour_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/button_shape"
+        android:padding="10dp"
+        android:text="@string/select_color"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/pickerTitleOne"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/pickerTitleOne" />
+
+
+    <TextView
+        android:id="@+id/minutesTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/minutes_color"
+        android:textColor="@color/orange_900"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pickerTitleOne">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/pickerTitleTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/current_color"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/minutesTitle" />
+
+    <View
+        android:id="@+id/preview_selected_color_minutes"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="@id/pickerTitleTwo"
+        app:layout_constraintStart_toEndOf="@id/pickerTitleTwo"
+        app:layout_constraintTop_toTopOf="@id/pickerTitleTwo" />
+
+    <Button
+        android:id="@+id/set_color_button_minutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/button_shape"
+        android:padding="10dp"
+        android:text="@string/select_color"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/pickerTitleTwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/pickerTitleTwo" />
+
+
+    <TextView
+        android:id="@+id/secondsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/second_color"
+        android:textColor="@color/orange_900"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pickerTitleTwo">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/pickerTitleThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/current_color"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/secondsTitle" />
+
+    <View
+        android:id="@+id/preview_selected_color_seconds"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="@id/pickerTitleThree"
+        app:layout_constraintStart_toEndOf="@id/pickerTitleThree"
+        app:layout_constraintTop_toTopOf="@id/pickerTitleThree" />
+
+    <Button
+        android:id="@+id/set_color_seconds_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/button_shape"
+        android:padding="10dp"
+        android:text="@string/select_color"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/pickerTitleThree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/pickerTitleThree" />
+</androidx.constraintlayout.widget.ConstraintLayout>
